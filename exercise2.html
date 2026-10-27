@@ -1,1 +1,33 @@
-   <!-- Write your code here -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB PROGRAMMING 8</title>
+  </head>
+  <body>
+    <style>
+        #box{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <div id="box"></div>
+    <script>
+        let res = document.getElementById("box")
+        let width=100
+        let height=100
+        let newwidth=200
+        let newheight=200
+        res.addEventListener("click",() =>{
+            res.style.width=newwidth + "px";
+            res.style.height=newheight + "px";
+            res.style.transition="0.2s"
+        });
+        res.addEventListener("dblclick",() =>{
+            res.style.width=width + "px";
+            res.style.height=height + "px";
+            res.style.transition="0.2s"
+        })
+    </script>
+  </body>
